@@ -10,8 +10,6 @@ export default async function tokenValidation(req, res, next) {
 
     res.locals.userId = session.userId;
 
-    console.log(session)
-
     next();
   } catch (err) {
     res.status(500).send(err.message);
