@@ -7,7 +7,6 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5000
 
-//Função que inicia o servidor
 export function connectServer() {
   const app = express();
   app.use(express.json());

@@ -5,7 +5,7 @@ dotenv.config();
 
 const connectionString = process.env.MONGO_URI;
 
-const mongoClient = new MongoClient(`mongodb+srv://guigc0408:040800@cluster0.vhpj7hr.mongodb.net/?retryWrites=true&w=majority`);
+const mongoClient = new MongoClient(connectionString);
 
 try {
   await mongoClient.connect();
